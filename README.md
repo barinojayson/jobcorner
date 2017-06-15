@@ -16,4 +16,4 @@ The Laravel framework is favored because
 2. Its helpers are exceptionally handy, making coding time shorter and effecient.
 3. Integrated authentication and exception handling.
 4. Easy management of routing where you can simply define the routes on your application in just one php file.
-5. It has built in unit testing(phpunit) which is really to configure.
+5. It has built in unit testing(phpunit) which is really easy to configure.
