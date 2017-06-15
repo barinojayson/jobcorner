@@ -8,6 +8,7 @@ use App\Models\Customer;
 use App\Models\DealCriteria;
 use App\Models\DealOffer;
 use App\Models\CustomerOffer;
+use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -92,7 +93,52 @@ class JobCornerSeeder extends Seeder
             'priviledged' => 0,
         ));
 
-        $this->command->info('Created customers data');
+        $this->command->info('Created customer data');
+
+        // seed users
+        $admin_user = User::create(array(
+            'name'         => 'Admin',
+            'email'  => 'admin@jobstore.com',
+            'password' => 'test123!',
+            'customer_id' => 0,
+        ));
+
+        $apple_user = User::create(array(
+            'name'         => 'Steve Jobs',
+            'email'  => 'user@apple.com',
+            'password' => 'test123!',
+            'customer_id' => $apple->id,
+        ));
+
+        $ford_user = User::create(array(
+            'name'         => 'Henry Ford',
+            'email'  => 'user@ford.com',
+            'password' => 'test123!',
+            'customer_id' => $ford->id,
+        ));
+
+        $nike_user = User::create(array(
+            'name'         => 'Phil Knight',
+            'email'  => 'user@nike.com',
+            'password' => 'test123!',
+            'customer_id' => $nike->id,
+        ));
+
+        $unilever_user = User::create(array(
+            'name'         => 'Paul Polman',
+            'email'  => 'user@unilever.com',
+            'password' => 'test123!',
+            'customer_id' => $unilever->id,
+        ));
+
+        $nokia_user = User::create(array(
+            'name'         => 'Stephen Elop',
+            'email'  => 'user@nokia.com',
+            'password' => 'test123!',
+            'customer_id' => $nokia->id,
+        ));
+
+        $this->command->info('Created login users data');
         
         // seed deals
         $deal1 = Deal::create(array(
