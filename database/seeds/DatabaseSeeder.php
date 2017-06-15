@@ -98,7 +98,7 @@ class JobCornerSeeder extends Seeder
         // seed users
         $admin_user = User::create(array(
             'name'         => 'Admin',
-            'email'  => 'admin@jobstore.com',
+            'email'  => 'admin@corner.com',
             'password' => 'test123!',
             'customer_id' => 0,
         ));
