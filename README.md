@@ -5,14 +5,15 @@ JobcoCorner allows admin to create and specify deals to customers. The applicati
 
 Technologies Used:
 
-Laravel
-HTML
-CSS
-MySQL
+* PHP Laravel Framework
+* HTML (Blade)
+* CSS
+* MySQL
 
 The Laravel framework is favored because
 
 1. I am new to Laravel and wanted to learn and explore the Laravel way of doing things.
-2. It's helpers are exceptionally handy, making coding time shorter and effecient.
+2. Its helpers are exceptionally handy, making coding time shorter and effecient.
 3. Integrated authentication and exception handling.
 4. Easy management of routing where you can simply define the routes on your application in just one php file.
+5. It has built in unit testing(phpunit) which is really to configure.
